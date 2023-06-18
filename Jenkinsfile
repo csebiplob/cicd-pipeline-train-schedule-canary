@@ -24,6 +24,7 @@ pipeline {
                     }
                 }
             }
+        }
         
         stage('Push Docker Image') {
             when {
@@ -37,7 +38,6 @@ pipeline {
                     }
                 }
             }
-        }
         }
         stage('CanaryDeploy') {
             when {
